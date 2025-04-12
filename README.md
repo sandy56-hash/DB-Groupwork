@@ -61,5 +61,5 @@ An Entity-Relationship Diagram (`ERD`) was created using **Draw.io** to visualiz
 1. Clone the repository:
    ```bash
    git clone https://github.com/sandy56-hash/DB-Groupwork.git
-   cd DB-Groupwork
+   cd DB-Groupwork.
    
