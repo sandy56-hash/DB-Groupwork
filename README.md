@@ -52,7 +52,8 @@ Build a robust and normalized database system that:
 ## ER Diagram
 
 An Entity-Relationship Diagram (`ERD`) was created using **Draw.io** to visualize table relationships.  
-> [Insert image or link to ERD here]
+> [![DatabaseG1 drawio](https://github.com/user-attachments/assets/ec38d6a6-d468-4d0b-ae98-d41e52772d89)
+]
 
 ---
 
