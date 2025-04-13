@@ -129,13 +129,19 @@ CREATE TABLE order_history (
 
 
 -- Create users and roles
-CREATE USER 'readonly_user'@'localhost' IDENTIFIED BY 'readonlypass';
-GRANT SELECT ON bookstore.*TO 'readonly_user'@'localhost';
 
-CREATE USER 'admin_user'@'localhost' IDENTIFIED BY 'adminpass';
-GRANT ALL PRIVILEGES ON  bookstore.* TO 'admin_user'@'localhost';
+CREATE USER 'admin_name1'@'%' IDENTIFIED BY 'name1123!;
+GRANT ALL PRIVILEGES ON bookstore_db.* TO 'admin_name1'@'%' WITH GRANT OPTION;
+
+CREATE USER 'admin_name2'@'%' IDENTIFIED BY 'name2123!;
+GRANT ALL PRIVILEGES ON bookstore_db.* TO 'admin_name2'@'%' WITH GRANT OPTION;
+
+CREATE USER 'admin_name3'@'%' IDENTIFIED BY 'name3123!;
+GRANT ALL PRIVILEGES ON bookstore_db.* TO 'admin_name3'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
 -- List all books with authors and publishers
+    
 SELECT b.title, a.first_name, a.last_name, p.name AS publisher
 FROM book b
 JOIN book_author ba ON b.book_id = ba.book_id
